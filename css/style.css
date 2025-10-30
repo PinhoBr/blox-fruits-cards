@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/sim.png) center/cover no-repeat;
+    background-size: 100%;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 1rem;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 1rem;
+
+}
+h1{
+    font-size: 2.5rem;
+    color: #FF4500;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin-bottom: 0.5rem;
+}
+.logo {
+  display: block;
+  margin: 1rem auto; 
+  transform: scale(1.5); 
+  transform-origin: center; 
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 15rem;
+  min-height: 18rem;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  
+}
+
+/*Fazer o JS primeiro e depois estilizar os cards*/
+.card--avatar{
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card--title {
+  font-family: "Luckiest Guy", cursive;
+  color: #222;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.card--tipo {
+  font-family: "Bangers", cursive;
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card--link{
+    text-decoration: none;
+    background-color: #FF4500 ;
+    color: #fff;
+    margin-top: auto;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+
+
+.card--description {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+  
+  .logo {
+    display: block;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  
+
+ .raridade--commun {
+  box-shadow: 0 0 12px 2px rgba(150, 150, 150, 0.6);
+
+}
+  
+  .raridade--commun .card--title {
+    color: #AAAAAA;
+  }
+  
+.raridade--uncommun {
+  box-shadow: 0 0 15px 4px rgba(0, 140, 255, 0.6);
+
+}
+  
+  .raridade--uncommun .card--title {
+    color: #0096FF;
+  }
+  
+ .raridade--rare {
+  box-shadow: 0 0 18px 6px rgba(120, 0, 255, 0.6);
+
+}
+  
+  .raridade--rare .card--title {
+    color: #8c00ff;
+  }
+  
+.raridade--legendary {
+  box-shadow: 0 0 20px 8px rgba(255, 0, 200, 0.7);
+
+}
+  
+  .raridade--legendary .card--title {
+    color: #ff00d4;
+    text-shadow: 0 0 5px rgba(255, 0, 221, 0.8);
+  }
+
+.raridade--mythical {
+  box-shadow: 0 0 20px 8px rgba(255, 50, 0, 0.7);
+ 
+}
+  
+  .raridade--mythical .card--title {
+    color: #ff0800;
+    text-shadow: 0 0 5px rgba(255, 30, 0, 0.8);
+  }
+
+.tipo--zoan .card--tipo{
+  color: #ff0000;
+}
+.tipo--logia .card--tipo{
+  color: #007bff;
+}
+.tipo--paramecia .card--tipo{
+  color: #ff8c00;
+}
+
+.image{
+  background-color: #ff0000;
+}
+
+.raridade--commun {
+  background: linear-gradient(180deg, #ffffff 60%, #dcdcdc 100%);
+}
+
+.raridade--uncommun {
+  background: linear-gradient(180deg, #ffffff 60%, #b2dcff 100%);
+}
+
+
+.raridade--rare {
+  background: linear-gradient(180deg, #ffffff 60%, #c7a9ff 100%);
+}
+
+
+.raridade--legendary {
+  background: linear-gradient(180deg, #ffffff 60%, #f6b9ff 100%);
+}
+
+
+.raridade--mythical {
+  background: linear-gradient(180deg, #ffffff 60%, #fc6e6e 100%);
+}

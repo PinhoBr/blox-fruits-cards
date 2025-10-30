@@ -1,1 +1,1 @@
-# blox-fruits-cards
+# clash-cards
